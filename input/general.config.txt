@@ -1,0 +1,6 @@
+years 10 #Numbers of years to get simulated
+depths -0.5 -1.5 -3.0 -5.0 #Different depths to get simulated at once
+yearsoutput 2 #Number of last years getting saved
+species ./input/species/species_1402300.config.txt ./input/species/species_1500200.config.txt ./input/species/species_1600500.config.txt
+lakes ./input/lakes/lake_1.config.txt ./input/lakes/lake_6.config.txt ./input/lakes/lake_2.config.txt ./input/lakes/lake_3.config.txt ./input/lakes/lake_4.config.txt ./input/lakes/lake_5.config.txt ./input/lakes/lake_7.config.txt ./input/lakes/lake_8.config.txt ./input/lakes/lake_9.config.txt ./input/lakes/lake_10.config.txt ./input/lakes/lake_11.config.txt ./input/lakes/lake_12.config.txt ./input/lakes/lake_13.config.txt ./input/lakes/lake_14.config.txt ./input/lakes/lake_15.config.txt ./input/lakes/lake_16.config.txt ./input/lakes/lake_17.config.txt ./input/lakes/lake_18.config.txt ./input/lakes/lake_19.config.txt ./input/lakes/lake_20.config.txt ./input/lakes/lake_21.config.txt ./input/lakes/lake_22.config.txt ./input/lakes/lake_23.config.txt ./input/lakes/lake_24.config.txt ./input/lakes/lake_25.config.txt ./input/lakes/lake_26.config.txt ./input/lakes/lake_27.config.txt ./input/lakes/lake_28.config.txt ./input/lakes/lake_29.config.txt ./input/lakes/lake_30.config.txt ./input/lakes/lake_31.config.txt
+modelrun test #name of folder in outputs

@@ -1,0 +1,50 @@
+# Configuration file for Environmental parameters of lake PelhamerSee for 2016
+
+# general model parameters
+Lake lake_18
+Name PelhamerSee
+
+#CARBONATE
+#maxCarbonate
+
+#LIGHT
+fracReflected 0.1 # light reflection at the water surface [-]; 0.1 in CHARISMA
+iDelay 11 #days after 1st of January where I is minimal [d]; calculated for Karolinenfeld 9.1.17 -> next station
+iDev 1.0 #Deviation factor to change total irradiation [-]; 
+latitude 47.93 #Latitude of corresponding lake; [°]; 
+maxI 1597.0 #Maximal Irradiance in [µE m^-2 s^-1]; 868 in CHARISMA | calculated for Karolinenfeld 9.1.17 gkd -> next station
+minI 21.9 #Minimal Irradiance [µE m^-2 s^-1]; 96 in CHARISMA | calculated for Karolinenfeld 9.1.17 gkd -> next station
+parFactor 0.5 # fraction of total irradiation that is PAR [-]; 0.5 in CHARISMA
+
+#NUTRIENT
+maxNutrient 0.028 #[mg/l] #Conc of limiting nutrient in water without plants
+
+#TEMPERATURE
+maxTemp 22.6 #max mean daily temperature of a year in [°C]; gdk.bayern.de
+minTemp 4.0 #min mean daily temperature of a year in [°C]; gdk.bayern.de
+tempDelay 20 #days after 1st of January where Temp is minimal [d]; gdk.bayern.de
+tempDev 1.0 #share of temp [-]; 
+
+#VERTUCAL LIGHT ATTENUATION / TURBIDITY 
+backgrKd 1.0 #Background light attenuation of water 
+#clearWaterFraction
+#clearWaterPeriod
+#clearWaterTiming
+#kd 2.0 #Mean light attenuation coefficient (Kd) (cosine) []
+kdDelay 0 #Delay, the day number with the minimal light attenuation coefficient [d]; 13.0
+kdDev 1.0 #Deviation factor, a factor between 0 and 1 to change the whole light attenuation range [-]; 1.0 in CHARISMA
+#kdDiffusion
+#kdRange
+#KdStochastic
+minKd 0.7 #Maximum light attenuation coefficient [m^-1]; SD=16.00m 16.3.2015 0.11
+maxKd 0.7 #Minimum light attenuation coefficient [m^-1]; SD=1.60m 13.1.2015 1.06
+
+# WATER LEVEL
+levelCorrection 0.0 #Correction for reference level [m] MWL gdk.bayern.de 603.27
+maxW 0.0 #Maximal water level [m] above MW in 2017 at 25.2.2017 gdk.bayern.de 603.32
+minW 0.0 #Minimal water level [m] below MWL (518.20) at 31.1.2017 gdk.bayern.de 602.99
+#WaterChange
+#WaterChangePeriod
+#...
+wDelay 0 #Delay of cosine of water level [m] 31
+#wDev

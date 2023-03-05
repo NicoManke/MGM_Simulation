@@ -1,0 +1,49 @@
+# Configuration file for Environmental parameters of lake Abtsdorfer See for 2017
+
+# general model parameters
+Lake lake_1
+Name AbtsdorferSee
+
+#CARBONATE
+#maxCarbonate
+
+#LIGHT
+fracReflected 0.1 # light reflection at the water surface [-]; 
+iDelay 8 #days after 1st of January where I is minimal [d];
+iDev 1.0 #Deviation factor to change total irradiation [-]; 
+latitude 47.907 #Latitude of corresponding lake; [°]; 
+maxI 1590.0 #Maximal Irradiance in [µE m^-2 s^-1]; calculated for Nilling
+minI 34.2 #Minimal Irradiance [µE m^-2 s^-1]; calculated for Nilling
+parFactor 0.5 # fraction of total irradiation that is PAR [-];
+
+#NUTRIENT
+maxNutrient 0.027 #Conc of limiting nutrient in water without plants [mg/l]
+
+#TEMPERATURE
+maxTemp 27.0 #max mean daily temperature of a year in [°C]; 
+minTemp 1.5 #min mean daily temperature of a year in [°C]; 
+tempDelay 31 #days after 1st of January where Temp is minimal [d];
+tempDev 1.0 #share of temp [-]; 
+
+#VERTUCAL LIGHT ATTENUATION / TURBIDITY
+backgrKd 1.0 #Background light attenuation of water (Vertical light attenuation, turbidity)
+#clearWaterFraction
+#clearWaterPeriod
+#clearWaterTiming
+#kd 2.0 #Mean light attenuation coefficient (Kd) (cosine) []
+kdDelay 0.0 #Delay, the day number with the minimal light attenuation coefficient [d];
+kdDev 1.0 #Deviation factor, a factor between 0 and 1 to change the whole light attenuation range [-];
+#kdDiffusion
+#kdRange
+#KdStochastic
+maxKd 0.65 #Maximum light attenuation coefficient [m^-1]; gkd.de 
+minKd 0.65 #Minimum light attenuation coefficient [m^-1]; gkd.de
+
+# WATER LEVEL
+levelCorrection 0.0 #Correction for reference level [m] MWL gdk.bayern.de
+maxW 0.0 #Maximal water level [m] above MWL
+minW 0.0 #Minimal water level [m] below MWL
+#WaterChangePeriod
+#...
+wDelay 0 #Delay of cosine of water level [m]
+#wDev

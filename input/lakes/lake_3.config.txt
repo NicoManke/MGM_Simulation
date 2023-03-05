@@ -1,0 +1,49 @@
+# Configuration file for Environmental parameters of lake Ammersee for 2016
+
+# general model parameters
+Lake lake_3
+Name Ammersee
+
+#CARBONATE
+#maxCarbonate
+
+#LIGHT
+fracReflected 0.1 # light reflection at the water surface [-]; 0.1 in CHARISMA
+iDelay 10 #days after 1st of January where I is minimal [d]; -10 in CHARISMA
+iDev 1.0 #Deviation factor to change total irradiation [-]; 
+latitude 47.982 #Latitude of corresponding lake; [°]; 
+maxI 1634.2 #Maximal Irradiance in [µE m^-2 s^-1]; 868 in CHARISMA | calculated for Ammerseeboje
+minI 16.3 #Minimal Irradiance [µE m^-2 s^-1]; 96 in CHARISMA | calculated for Ammerseeboje
+parFactor 0.5 # fraction of total irradiation that is PAR [-];
+
+#NUTRIENT
+maxNutrient 0.007  #Conc of limiting nutrient in water without plants [mg/l]
+
+#TEMPERATURE
+maxTemp 23.8 #max mean daily temperature of a year in [°C]; 
+minTemp 4.5 #min mean daily temperature of a year in [°C]; 
+tempDelay 24 #days after 1st of January where Temp is minimal [d];
+tempDev 1.0 #share of temp [-]; 
+
+#VERTUCAL LIGHT ATTENUATION / TURBIDITY
+backgrKd 1.0 #Background light attenuation of water (Vertical light attenuation, turbidity)
+#clearWaterFraction
+#clearWaterPeriod
+#clearWaterTiming
+#kd 2.0 #Mean light attenuation coefficient (Kd) (cosine) []
+kdDelay 0.0 #Delay, the day number with the minimal light attenuation coefficient [d];
+kdDev 1.0 #Deviation factor, a factor between 0 and 1 to change the whole light attenuation range [-];
+#kdDiffusion
+#kdRange
+#KdStochastic
+maxKd 0.43 #Maximum light attenuation coefficient [m^-1]; gkd.de 
+minKd 0.43 #Minimum light attenuation coefficient [m^-1]; gkd.de
+
+# WATER LEVEL
+levelCorrection 0.0 #Correction for reference level [m] MWL gdk.bayern.de 532.9
+maxW 0.0 #Maximal water level [m] above MWL 533.46
+minW 0.0 #Minimal water level [m] below MWL 532.75
+#WaterChangePeriod
+#...
+wDelay 0 #Delay of cosine of water level [m] 116
+#wDev
